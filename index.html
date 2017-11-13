@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="urf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Room 255</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="phone">Please flip your phone</div>
+
+    <img class="hide room pearlroom" id="pearlbg" src="assets/pearl_bg.png">
+    <img class="hide pearlroom" id="pearl1" onclick="playmi();" src="assets/pearl1.svg">
+    <img class="hide pearlroom" id="pearl2" onclick="playsol();" src="assets/pearl2.svg">
+    <img class="hide pearlroom" id="pearl3" onclick="playdo();" src="assets/pearl3.svg">
+    <img class="hide pearlroom" id="pearl4" onclick="playla();" src="assets/pearl4.svg">
+    <img class="hide pearlroom" id="pearl5" onclick="playsi();" src="assets/pearl5.svg">
+    <img class="hide pearlroom" id="pearl6" onclick="playre();" src="assets/pearl5.svg">
+    <img class="hide pearlroom" id="pearl7" onclick="playfa();" src="assets/pearl5.svg">
+    <audio id="do" src="sound/do.wav" autostart="false" ></audio>
+    <audio id="re" src="sound/re.wav" autostart="false" ></audio>
+    <audio id="mi" src="sound/mi.wav" autostart="false" ></audio>
+    <audio id="fa" src="sound/fa.wav" autostart="false" ></audio>
+    <audio id="sol" src="sound/sol.wav" autostart="false" ></audio>
+    <audio id="la" src="sound/la.wav" autostart="false" ></audio>
+    <audio id="si" src="sound/ti.wav" autostart="false" ></audio>
+
+    <img class="hide room mouth" id="mouthbg" src="assets/mouth_bg.png">
+    <img class="hide room mouth" id="mouthwave" src="assets/mouth_wave.svg">
+    <img class="hide room mouth" id="mouth" src="assets/mouth.svg">
+    <input class="hide mouth" id="mouthanswer" type="text" name="answer" value="answer"><br>
+
+
+    <img class="hide room avocado" id="avocadobg" src="assets/avocado_bg.png">
+    <img class="hide room avocado" id="avocadot" src="assets/avocado_text.svg">
+    <img class="hide avocado" id="avocadodirt" src="assets/avocado_dirt.svg">
+    <img class="hide avocado" id="avocado" src="assets/avocado.svg">
+    <img class="hide avocado" id="avocadop" src="assets/avocado_p.svg">
+    <div class="hide avocado" id="clean">Clean up the wall.</div>
+
+    <div class="hide bikeroom" id="bikebg"></div>
+    <img class="hide bikeroom positionbike" id="bike" src="assets/bike.svg">
+    <div class="hide bikeroom positionbike" id="bikewidth"><img id="bikeroll" src="assets/bikeroll.svg"></div>
+    <div class="hide bikeroom" id="rotationsno">7+7&divide7x7-7=?</div>
+
+    <div class="hide door" id="doorbg"></div>
+    <div class="hide door" id="cactus1"></div>
+    <div class="hide door" id="door"></div>
+    <div class="hide door" id="cactus1con"></div>
+
+    <div class="hide title" id="title"></div>
+
+
+
+
+
+
+
+<!-- script -->
+    <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="js/Draggable.min.js"></script>
+    <script src="js/ThrowPropsPlugin.min.js"></script>
+    <script src="js/jquery.eraser.js"></script>
+    <script src="js/ani/title/bodymovin.js"></script>
+    <script src="js/ani/door/bodymovin.js"></script>
+    <script src="js/ani/cactus1/bodymovin.js"></script>
+    <script src="js/ani/bike/bodymovin.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+
+
+
+  </body>

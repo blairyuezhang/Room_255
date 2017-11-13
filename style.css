@@ -1,0 +1,254 @@
+/* For vertical phones: */
+@font-face{
+    font-family: 'prestige';
+    src: url('PrestigeEliteStd-Bd.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, * {
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+#phone{
+  position: absolute;
+  width: 100%;
+  top: 250px;
+  font-family:'prestige';
+  text-align: center;
+}
+
+.hide{
+  display: none;
+}
+
+
+@media (min-width: 376px) {
+  /* For horizontal phones: */
+
+  #phone{
+    display: none;
+  }
+
+  .room{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hide{
+    display: inline;
+  }
+
+  #title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #doorbg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #door{
+    position: absolute;
+    left: 46%;
+    top: 44vh;
+    width: 8%;
+    height: 17%;
+    cursor: pointer;
+  }
+
+  #cactus1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #cactus1con{
+    position: absolute;
+    left: 40%;
+    top: 41vh;
+    width: 6%;
+    height: 21%
+  }
+
+  #bikebg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .positionbike{
+    position: absolute;
+    left: 27.5vw;
+    top: 22vh;
+  }
+
+  #bike{
+    width: 45%;
+    height: 45vh;
+  }
+
+  #bikeroll{
+    position: relative;
+    left: 42%;
+    top: 23.4vh;
+    width: 20%;
+    /*height: 4vh;*/
+    cursor: pointer;
+  }
+
+  #rotationsno{
+    width: 100vw;
+    display: inline;
+    position: absolute;
+    top: 90vh;
+    font-family: 'prestige';
+    font-size: 100%;
+    text-align: center;
+  }
+
+  #pearlbg{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #pearl1{
+    position: absolute;
+    left: 22%;
+    top: 38vh;
+    width: 17.7%;
+  }
+
+  #pearl2{
+    position: absolute;
+    left: 52%;
+    top: 55vh;
+    width: 12.6%;
+  }
+
+  #pearl3{
+    position: absolute;
+    left: 12%;
+    top: 70vh;
+    width: 10.6%;
+  }
+
+  #pearl4{
+    position: absolute;
+    left: 34%;
+    top: 79vh;
+    width: 11.8%;
+  }
+
+  #pearl5{
+    position: absolute;
+    left: 74%;
+    top: 67vh;
+    width: 11.2%;
+  }
+
+  #pearl6{
+    position: absolute;
+    left: 59%;
+    top: 80vh;
+    width: 7%;
+  }
+
+  #pearl7{
+    position: absolute;
+    left: 40%;
+    top:  65vh;
+    width: 5%;
+  }
+
+  #avocadodirt{
+    position: absolute;
+    left: 17.5%;
+    top: 6vh;
+    width: 65%;
+  }
+
+  #avocado{
+    position: absolute;
+    left: 32%;
+    top: 45vh;
+    width: 35%;
+  }
+
+  #avocadop{
+    position: absolute;
+    left: 6%;
+    top: 50vh;
+    width: 5%;
+    cursor: pointer;
+  }
+
+  #clean{
+    border: 100px;
+    width: 100vw;
+    display: inline;
+    position: absolute;
+    top: 90vh;
+    font-family: 'prestige';
+    font-size: 100%;
+    text-align: center;
+    background-color: white;
+  }
+
+  #mouthanswer{
+    position: absolute;
+    left: 45.5%;
+    top: 85vh;
+    width: 10%;
+    height: 6vh;
+    border-width: 5px;
+    border-color: blue;
+    font-family: 'prestige';
+    font-size: 100%;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+  #phone{
+    display: none;
+  }
+
+
+
+  #rotationsno{
+    font-size: 200%;
+
+  }
+
+  #clean{
+    font-size: 200%;
+  }
+
+  #mouthanswer{
+    font-size: 200%;
+  }
+
+}
