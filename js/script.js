@@ -12,8 +12,9 @@ $(document).ready(function(){
     type: "rotation",
     throwProps: true,
     onDrag : function(){
-      var rotations = Math.floor((this.rotation)/360*10)
+      var rotations = Math.floor((this.rotation)/360)
         if (rotations==50) {
+          alert("Congratulations! You are a math genius!")
           $(".bikeroom").fadeOut();
         }
         $("#rotationsno").html("7+7&divide7x7-7="+rotations);
