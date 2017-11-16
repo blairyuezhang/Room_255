@@ -16,9 +16,12 @@ $(document).ready(function(){
 
         $("#enter").click(function() {
           if (rotations==50){
-            $("#alertGenius").fadeIn();
+            $("#alertGenius").fadeIn(100);
           }else {
-            $("#alertThink").fadeIn();
+            $("#alertThink").fadeIn(100);
+            setTimeout(function () {
+              $("#alertThink").fadeOut(100);
+            },2500)
           }
 
         })
@@ -27,29 +30,39 @@ $(document).ready(function(){
     }
   });
 
-  $("#alertThink").click(function(){
-    $(this).fadeOut(100);
-  })
-
   $("#alertGenius").click(function(){
     $(".bikeroom").fadeOut(2000);
   })
 
-
-  $("#avocadop").click(function(event){
-    $("#avocadodirt").eraser({
-      size: 30,
-      completeRatio: .4,
-      completeFunction: hideDirt
-    });
-  });
-
-  function hideDirt(){
-    $("#avocadodirt").fadeOut(2000);
-    setTimeout(function(){
-      $(".avocado").fadeOut(1000);
-    }, 4000);
+  $("#avocadoinput").keyup(function(){
+    if(this.value == "avocado" || this.value=="AVOCADO" || this.value=="Avocado"){
+      if(event.keyCode == 13) {
+        $("#avocadoshape").fadeOut(100);
+        $("#avocado").fadeIn(1000);
+        $("#avocadoinput").fadeOut(100);
+        $("#avocadoenter").fadeOut(100);
+      }
+      $("#avocadoenter").click(function(){
+        $("#avocadoshape").fadeIn(1000);
+        $("#avocadoinput").fadeOut(100);
+        $("#avocadoenter").fadeOut(100);
+      })
+    }else{
+      if(event.keyCode == 13) {
+        $("#avocadoW").fadeIn(100);
+      }
+      $("#avocadoenter").click(function(){
+        $("#avocadoW").fadeIn(100);
+      })
+      setTimeout(function () {
+        $("#avocadoW").fadeOut(100);
+      },2500)
   }
+})
+
+  $("#avocado").click(function () {
+    $(".avocado").fadeOut(2000);
+  })
 
 
   $("#mouthanswer").keyup(function(){
@@ -61,9 +74,22 @@ $(document).ready(function(){
         $("#alertMouth").fadeIn(100);
       })
     }else{
-        console.log("hi");
-    }
+      if(event.keyCode == 13) {
+        $("#alertMouthW").fadeIn(100);
+      }
+      $("#mouthenter").click(function(){
+        $("#alertMouthW").fadeIn(100);
+      })
+      setTimeout(function () {
+        $("#alertMouthW").fadeOut(100);
+      },2500)
+  }
+})
+
+  $("#alertMouth").click(function(){
+    $(".mouth").fadeOut(2000);
   })
+
 
 })
 

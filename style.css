@@ -117,10 +117,10 @@ body{
   }
 
   #rotationsno{
-    width: 100vw;
-    display: inline;
     position: absolute;
+    left: 0;
     top: 90vh;
+    width: 100%;
     font-family: 'prestige';
     font-size: 100%;
     text-align: center;
@@ -202,11 +202,11 @@ body{
     width: 5%;
   }
 
-  #avocadodirt{
+  #avocadoshape{
     position: absolute;
-    left: 17.5%;
-    top: 6vh;
-    width: 65%;
+    left: 32%;
+    top: 45vh;
+    width: 35%;
   }
 
   #avocado{
@@ -214,6 +214,8 @@ body{
     left: 32%;
     top: 45vh;
     width: 35%;
+    z-index: 2;
+    display: none;
   }
 
   #avocadop{
@@ -221,19 +223,38 @@ body{
     left: 6%;
     top: 50vh;
     width: 5%;
-    cursor: pointer;
   }
 
-  #clean{
-    border: 100px;
-    width: 100vw;
-    display: inline;
+  #avocadot{
     position: absolute;
-    top: 90vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #avocadoinput{
+    position: absolute;
+    left: 45.5%;
+    top: 83vh;
+    width: 10%;
+    height: 6vh;
+    border: 2px solid #000000;
     font-family: 'prestige';
     font-size: 100%;
     text-align: center;
+  }
+
+  #avocadoenter{
+    position: absolute;
+    left: 47%;
+    top: 91.5vh;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    color: black;
     background-color: white;
+    border: 2px solid #000000;
+    font-size: 100%;
   }
 
   #mouthanswer{
@@ -285,6 +306,21 @@ body{
 
   #clean{
     font-size: 200%;
+  }
+
+  #avocadoinput{
+    left: 45.5%;
+    top: 85vh;
+    width: 10%;
+    height: 6vh;
+    border: 4px solid #000000;
+    font-family: 'prestige';
+    font-size: 200%;
+    text-align: center;
+  }
+
+  #avocadoenter{
+    display: none;
   }
 
   #mouthanswer{
