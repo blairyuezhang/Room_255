@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Room 255</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="preload" href="js/ani/title/bodymovin.js" as="script">
   </head>
   <body>
     <div id="phone">Please flip your phone</div>
@@ -29,7 +30,9 @@
     <img class="hide room mouth" id="mouthbg" src="assets/mouth_bg.png">
     <img class="hide room mouth" id="mouthwave" src="assets/mouth_wave.svg">
     <img class="hide room mouth" id="mouth" src="assets/mouth.svg">
-    <input class="hide mouth" id="mouthanswer" type="text" name="answer" value="answer"><br>
+    <input class="hide mouth" id="mouthanswer" type="text">
+    <button class="hide mouth" id="mouthenter" type="button" >&#8629</button>
+    <img class="hide mouth alert" id="alertMouth" src="assets/alertmouth.png">
 
 
     <img class="hide room avocado" id="avocadobg" src="assets/avocado_bg.png">
@@ -42,7 +45,10 @@
     <div class="hide bikeroom" id="bikebg"></div>
     <img class="hide bikeroom positionbike" id="bike" src="assets/bike.svg">
     <div class="hide bikeroom positionbike" id="bikewidth"><img id="bikeroll" src="assets/bikeroll.svg"></div>
-    <div class="hide bikeroom" id="rotationsno">7+7&divide7x7-7=?</div>
+    <div class="hide bikeroom" id="rotationsno">7 + 7 &divide 7 + 7 &times 7 - 7 = ?</div>
+    <button class="hide bikeroom" id="enter" type="button" >&#8629</button>
+    <img class="hide bikeroom alert" id="alertGenius" src="assets/alertgenius.png">
+    <img class="hide bikeroom alert" id="alertThink" src="assets/alertthink.png">
 
     <div class="hide door" id="doorbg"></div>
     <div class="hide door" id="cactus1"></div>

@@ -126,6 +126,27 @@ body{
     text-align: center;
   }
 
+  #enter{
+    position: absolute;
+    left: 71%;
+    top: 88.5vh;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    color: blue;
+    background-color: white;
+    border: 2px solid #0000ff;
+    font-size: 100%;
+  }
+
+  .alert{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+  }
+
   #pearlbg{
     position: absolute;
     left: 0;
@@ -218,14 +239,26 @@ body{
   #mouthanswer{
     position: absolute;
     left: 45.5%;
-    top: 85vh;
+    top: 80vh;
     width: 10%;
     height: 6vh;
-    border-width: 5px;
-    border-color: blue;
+    border: 2px solid #0000ff;
     font-family: 'prestige';
     font-size: 100%;
     text-align: center;
+  }
+
+  #mouthenter{
+    position: absolute;
+    left: 47%;
+    top: 88.5vh;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    color: blue;
+    background-color: white;
+    border: 2px solid #0000ff;
+    font-size: 100%;
   }
 
 }
@@ -236,11 +269,18 @@ body{
     display: none;
   }
 
-
-
   #rotationsno{
     font-size: 200%;
+  }
 
+  #enter{
+    left: 65%;
+    top: 89vh;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid #0000ff;
+    font-size: 150%;
   }
 
   #clean{
@@ -248,7 +288,18 @@ body{
   }
 
   #mouthanswer{
+    left: 45.5%;
+    top: 85vh;
+    width: 10%;
+    height: 6vh;
+    border: 4px solid #0000ff;
+    font-family: 'prestige';
     font-size: 200%;
+    text-align: center;
+  }
+
+  #mouthenter{
+    display: none;
   }
 
 }

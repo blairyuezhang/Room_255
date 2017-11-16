@@ -12,14 +12,28 @@ $(document).ready(function(){
     type: "rotation",
     throwProps: true,
     onDrag : function(){
-      var rotations = Math.floor((this.rotation)/360)
-        if (rotations==50) {
-          alert("Congratulations! You are a math genius!")
-          $(".bikeroom").fadeOut();
-        }
-        $("#rotationsno").html("7+7&divide7x7-7="+rotations);
+      var rotations = Math.floor((this.rotation)/360*10)
+
+        $("#enter").click(function() {
+          if (rotations==50){
+            $("#alertGenius").fadeIn();
+          }else {
+            $("#alertThink").fadeIn();
+          }
+
+        })
+
+        $("#rotationsno").html("7 + 7 &divide 7 + 7 &times 7 - 7 = "+rotations);
     }
   });
+
+  $("#alertThink").click(function(){
+    $(this).fadeOut(100);
+  })
+
+  $("#alertGenius").click(function(){
+    $(".bikeroom").fadeOut(2000);
+  })
 
 
   $("#avocadop").click(function(event){
@@ -38,19 +52,21 @@ $(document).ready(function(){
   }
 
 
-
-  $("#mouthanswer").keypress(function(e) {
-     //check if enter is pressed
-   if(e.keyCode == 13) {
-        $(".mouth").fadeOut();
+  $("#mouthanswer").keyup(function(){
+    if(this.value == "kasey" || this.value=="KASEY" || this.value=="Kasey"){
+      if(event.keyCode == 13) {
+        $("#alertMouth").fadeIn(100);
+      }
+      $("#mouthenter").click(function(){
+        $("#alertMouth").fadeIn(100);
+      })
+    }else{
+        console.log("hi");
     }
-  });
-
-
-
-
+  })
 
 })
+
 
 
 function playdo() {
