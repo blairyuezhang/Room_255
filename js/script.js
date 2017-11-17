@@ -91,9 +91,234 @@ $(document).ready(function(){
   })
 
 
+  function musicFade() {
+    $(".musicNote").fadeOut(100);
+    miCount=0;
+    reCount=0;
+    doCount=0;
+  }
+
+    var miCount = 0;
+    $("#pearl1").click(function () {
+      var miArray = [function () {
+        $("#3-1").fadeIn(100);
+      }, function () {
+        if($("#2-2").is(":visible")){
+          $("#3-2").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-2").is(":visible")){
+          $("#3-3").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-3").is(":visible")){
+          $("#3-4").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-5").is(":visible")){
+          $("#3-5").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-5").is(":visible")){
+          $("#3-6").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-6").is(":visible")){
+          $("#3-7").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-7").is(":visible")){
+          $("#3-8").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-7").is(":visible")){
+          $("#3-9").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-9").is(":visible")){
+          $("#3-10").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-10").is(":visible")){
+          $("#3-11").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-9").is(":visible")){
+          $("#3-12").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }];
+      miArray[miCount++]();
+    })
+
+    var reCount = 0;
+    $("#pearl6").click(function () {
+      var miArray = [function () {
+        if($("#3-1").is(":visible")){
+          $("#2-1").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#1-1").is(":visible")){
+          $("#2-2").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-4").is(":visible")){
+          $("#2-3").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-3").is(":visible")){
+          $("#2-4").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-4").is(":visible")){
+          $("#2-5").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-8").is(":visible")){
+          $("#2-6").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#1-2").is(":visible")){
+          $("#2-7").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#1-3").is(":visible")){
+          $("#2-8").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-8").is(":visible")){
+          $("#2-9").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-12").is(":visible")){
+          $("#2-10").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }];
+      miArray[reCount++]();
+    })
+
+    var doCount = 0;
+    $("#pearl3").click(function () {
+      var miArray = [function () {
+        if($("#2-1").is(":visible")){
+          $("#1-1").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-6").is(":visible")){
+          $("#1-2").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#3-11").is(":visible")){
+          $("#1-3").fadeIn(100);
+        }else{
+          musicFade();
+        }
+      }, function () {
+        if($("#2-10").is(":visible")){
+          $("#1-4").fadeIn(100);
+          setTimeout(function () {
+            $("#alertPearl").fadeIn(1000);
+          },1000)
+        }else{
+          musicFade();
+        }
+      }];
+      miArray[doCount++]();
+    })
+
+    $("#pearl2").click(function () {
+      musicFade();
+    })
+
+    $("#pearl4").click(function () {
+      musicFade();
+    })
+
+    $("#pearl5").click(function () {
+      musicFade();
+    })
+
+    $("#pearl7").click(function () {
+      musicFade();
+    })
+
+
+    $("#alertPearl").click(function () {
+      $(".pearlroom").fadeOut(2000);
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
-
-
 
 function playdo() {
   var sounddo = document.getElementById("do");
