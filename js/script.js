@@ -43,7 +43,8 @@ $(document).ready(function(){
         $("#avocadoenter").fadeOut(100);
       }
       $("#avocadoenter").click(function(){
-        $("#avocadoshape").fadeIn(1000);
+        $("#avocadoshape").fadeOut(100);
+        $("#avocado").fadeIn(1000);
         $("#avocadoinput").fadeOut(100);
         $("#avocadoenter").fadeOut(100);
       })
