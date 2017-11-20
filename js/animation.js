@@ -8,19 +8,19 @@ var cactus1 = bodymovin.loadAnimation({
 })
 
 setTimeout(function(){
-  $('#title').fadeOut(1500);
+  $('.title').fadeOut(1500);
 },6000)
 
-// setTimeout(function(){
-//   alert('Hello! Welcome to Room 255! You are about to enter an adventure.');
-// },9000)
 
 var doorani = bodymovin.loadAnimation({
   container: document.getElementById('doorbg'),
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: 'js/ani/door/data.json'
+  path: 'js/ani/door/data.json',
+  rendererSettings: {
+        preserveAspectRatio:'none'
+    }
 })
 
 
@@ -29,7 +29,10 @@ var cactus1 = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'js/ani/cactus1/data.json'
+  path: 'js/ani/cactus1/data.json',
+  rendererSettings: {
+        preserveAspectRatio:'none'
+    }
 })
 
 var bikebgani = bodymovin.loadAnimation({
@@ -37,13 +40,19 @@ var bikebgani = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: false,
-  path: 'js/ani/bike/data.json'
+  path: 'js/ani/bike/data.json',
+  rendererSettings: {
+        preserveAspectRatio:'none'
+    }
 })
 
-// $('#bikeroll').click(function(){
-//   bikebgani.play();
-//   console.log('hello');
-// });
+var mouthani = bodymovin.loadAnimation({
+  container: document.getElementById('mouth'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'js/ani/mouth/data.json'
+})
 
 
 $('#door').click(function(){
@@ -53,7 +62,18 @@ $('#door').click(function(){
   setTimeout(function(){
     $(".door").fadeOut(1500);
   },500);
-
 });
 
+$('#mouth').click(function () {
+  mouthani.goToAndPlay(1,true);
+  playVoice();
 })
+
+
+})
+
+
+function playVoice() {
+  var voice = document.getElementById("voice");
+  voice.play();
+}

@@ -16,7 +16,9 @@ $(document).ready(function(){
 
         $("#enter").click(function() {
           if (rotations==50){
-            $("#alertGenius").fadeIn(100);
+            setTimeout(function () {
+              $(".bikeroom").fadeOut(2000);
+            },1000)
           }else {
             $("#alertThink").fadeIn(100);
             setTimeout(function () {
@@ -30,10 +32,6 @@ $(document).ready(function(){
     }
   });
 
-  $("#alertGenius").click(function(){
-    $(".bikeroom").fadeOut(2000);
-  })
-
   $("#avocadoinput").keyup(function(){
     if(this.value == "avocado" || this.value=="AVOCADO" || this.value=="Avocado"){
       if(event.keyCode == 13) {
@@ -41,6 +39,9 @@ $(document).ready(function(){
         $("#avocado").fadeIn(1000);
         $("#avocadoinput").fadeOut(100);
         $("#avocadoenter").fadeOut(100);
+        setTimeout(function () {
+          $(".avocado").fadeOut(2000);
+        },3000)
       }
       $("#avocadoenter").click(function(){
         $("#avocadoshape").fadeOut(100);
@@ -61,19 +62,14 @@ $(document).ready(function(){
   }
 })
 
-  $("#avocado").click(function () {
-    $(".avocado").fadeOut(2000);
-  })
-
 
   $("#mouthanswer").keyup(function(){
-    if(this.value == "kasey" || this.value=="KASEY" || this.value=="Kasey"){
+    if(this.value == "echo" || this.value=="ECHO" || this.value=="Echo"){
       if(event.keyCode == 13) {
-        $("#alertMouth").fadeIn(100);
+        setTimeout(function(){
+          $(".mouth").fadeOut(2000);
+        },1000)
       }
-      $("#mouthenter").click(function(){
-        $("#alertMouth").fadeIn(100);
-      })
     }else{
       if(event.keyCode == 13) {
         $("#alertMouthW").fadeIn(100);
@@ -86,10 +82,6 @@ $(document).ready(function(){
       },2500)
   }
 })
-
-  $("#alertMouth").click(function(){
-    $(".mouth").fadeOut(2000);
-  })
 
 
   function musicFade() {
@@ -263,8 +255,8 @@ $(document).ready(function(){
         if($("#2-10").is(":visible")){
           $("#1-4").fadeIn(100);
           setTimeout(function () {
-            $("#alertPearl").fadeIn(1000);
-          },1000)
+            $(".pearlroom").fadeOut(2000);
+          },2000)
         }else{
           musicFade();
         }
@@ -288,10 +280,6 @@ $(document).ready(function(){
       musicFade();
     })
 
-
-    $("#alertPearl").click(function () {
-      $(".pearlroom").fadeOut(2000);
-    })
 
 
 
