@@ -172,7 +172,7 @@ body{
   #pearl4{
     position: absolute;
     left: 34%;
-    top: 79vh;
+    top: 76vh;
     width: 11.8%;
   }
 
@@ -260,10 +260,17 @@ body{
     font-size: 100%;
   }
 
+  #echo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
   #mouth{
     position: absolute;
     left: 0;
-    top: -8vh;
+    top: 0;
     width: 100%;
   }
 
@@ -292,6 +299,36 @@ body{
     font-size: 100%;
   }
 
+  #body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #ice2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #iceglow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #ice1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 95%;
+  }
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -302,6 +339,13 @@ body{
 
   #rotationsno{
     font-size: 2vw;
+  }
+
+  #pearl4{
+    position: absolute;
+    left: 34%;
+    top: 79vh;
+    width: 11.8%;
   }
 
   #enter{
@@ -327,7 +371,13 @@ body{
   }
 
   #avocadoenter{
-    display: none;
+    left: 60%;
+    top: 85.6vh;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid #000000;
+    font-size: 150%;
   }
 
   #mouthanswer{
@@ -342,7 +392,13 @@ body{
   }
 
   #mouthenter{
-    display: none;
+    left: 60%;
+    top: 85.6vh;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid #0000ff;
+    font-size: 150%;
   }
 
 }

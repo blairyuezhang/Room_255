@@ -46,12 +46,32 @@ var bikebgani = bodymovin.loadAnimation({
     }
 })
 
+
+var echoani = bodymovin.loadAnimation({
+  container: document.getElementById('echo'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'js/ani/echo/data.json',
+  rendererSettings: {
+        preserveAspectRatio:'none'
+    }
+})
+
 var mouthani = bodymovin.loadAnimation({
   container: document.getElementById('mouth'),
   renderer: 'svg',
   loop: false,
   autoplay: false,
   path: 'js/ani/mouth/data.json'
+})
+
+var iceani = bodymovin.loadAnimation({
+  container: document.getElementById('iceglow'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'js/ani/icecream/data.json'
 })
 
 
@@ -66,6 +86,7 @@ $('#door').click(function(){
 
 $('#mouth').click(function () {
   mouthani.goToAndPlay(1,true);
+  echoani.goToAndPlay(1,true);
   playVoice();
 })
 

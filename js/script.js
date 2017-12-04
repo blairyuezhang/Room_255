@@ -14,19 +14,22 @@ $(document).ready(function(){
     onDrag : function(){
       var rotations = Math.floor((this.rotation)/360*10)
 
-        $("#enter").click(function() {
-          if (rotations==50){
-            setTimeout(function () {
-              $(".bikeroom").fadeOut(2000);
-            },1000)
-          }else {
-            $("#alertThink").fadeIn(100);
-            setTimeout(function () {
-              $("#alertThink").fadeOut(100);
-            },2500)
-          }
+              if (rotations==50){
+              $("#enter").click(function(){
+                $("#alertThink").fadeOut(0);
+                setTimeout(function () {
+                  $(".bikeroom").fadeOut(2000);
+                },1000)
+              })
+            }else {
+              $("#enter").click(function(){
+              $("#alertThink").fadeIn(0);
+              setTimeout(function () {
+                $("#alertThink").fadeOut(100);
+              },2500)
+              })
+            }
 
-        })
 
         $("#rotationsno").html("7 + 7 &divide 7 + 7 &times 7 - 7 = "+rotations);
     }
@@ -311,36 +314,43 @@ $(document).ready(function(){
 
 function playdo() {
   var sounddo = document.getElementById("do");
+  sounddo.currentTime=0;
   sounddo.play();
 }
 
 function playre() {
   var soundre = document.getElementById("re");
+  soundre.currentTime=0;
   soundre.play();
 }
 
 function playmi() {
   var soundmi = document.getElementById("mi");
+  soundmi.currentTime=0;
   soundmi.play();
 }
 
 function playfa() {
   var soundfa = document.getElementById("fa");
+  soundfa.currentTime=0;
   soundfa.play();
 }
 
 function playsol() {
   var soundsol = document.getElementById("sol");
+  soundsol.currentTime=0;
   soundsol.play();
 }
 
 function playla() {
   var soundla = document.getElementById("la");
+  soundla.currentTime=0;
   soundla.play();
 }
 
 function playsi() {
   var soundsi = document.getElementById("si");
+  soundsi.currentTime=0;
   soundsi.volume = 0.2;
   soundsi.play();
 }

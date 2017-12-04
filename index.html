@@ -11,6 +11,15 @@
   <body>
     <div id="phone">Please flip your phone</div>
 
+    <img class="hide room iceroom" id="icebg" src="assets/ice_bg.png">
+    <img class="hide iceroom" id="ice2" src="assets/ice_2.png">
+    <div class="hide iceroom" id="iceglow"></div>
+    <img class="hide iceroom" id="ice1" src="assets/ice_1.png">
+
+    <img class="hide room bodyroom" id="bodybg" src="assets/body_bg.jpg">
+    <img class="hide bodyroom" id="body" src="assets/body.gif">
+
+
     <img class="hide room pearlroom" id="pearlbg" src="assets/pearl_bg.png">
     <img class="hide pearlroom musicNote" id="1-1" src="assets/music/1-1.png">
     <img class="hide pearlroom musicNote" id="1-2" src="assets/music/1-2.png">
@@ -54,11 +63,12 @@
     <audio id="si" src="sound/ti.wav" autostart="false" ></audio>
 
     <img class="hide room mouth" id="mouthbg" src="assets/mouth_bg.png">
+    <div class="hide mouth" id="echo"></div>
     <div class="hide mouth" id="mouth"></div>
     <input class="hide mouth" id="mouthanswer" type="text">
     <button class="hide mouth" id="mouthenter" type="button" >&#8629</button>
     <img class="hide mouth alert" id="alertMouthW" src="assets/alertmouthwrong.png">
-    <audio id="voice" src="sound/voice.wav" autostart="false" ></audio>
+    <audio id="voice" src="sound/voice.mp3" autostart="false" ></audio>
 
 
     <img class="hide room avocado" id="avocadobg" src="assets/avocado_bg.png">
@@ -76,7 +86,7 @@
     <div class="hide bikeroom positionbike" id="bikewidth"><img id="bikeroll" src="assets/bikeroll.svg"></div>
     <div class="hide bikeroom" id="rotationsno">7 + 7 &divide 7 + 7 &times 7 - 7 = ?</div>
     <button class="hide bikeroom" id="enter" type="button" >&#8629</button>
-    <img class="hide bikeroom alert" id="alertThink" src="assets/alertthink.png">
+    <img class="hide alert" id="alertThink" src="assets/alertthink.png">
 
     <div class="hide door" id="doorbg"></div>
     <div class="hide door" id="cactus1"></div>
@@ -104,6 +114,8 @@
     <script src="js/ani/cactus1/bodymovin.js"></script>
     <script src="js/ani/bike/bodymovin.js"></script>
     <script src="js/ani/mouth/bodymovin.js"></script>
+    <script src="js/ani/echo/bodymovin.js"></script>
+    <script src="js/ani/icecream/bodymovin.js"></script>
     <script src="js/script.js"></script>
     <script src="js/animation.js"></script>
 
