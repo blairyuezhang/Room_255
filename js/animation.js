@@ -66,13 +66,6 @@ var mouthani = bodymovin.loadAnimation({
   path: 'js/ani/mouth/data.json'
 })
 
-var iceani = bodymovin.loadAnimation({
-  container: document.getElementById('iceglow'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'js/ani/icecream/data.json'
-})
 
 
 $('#door').click(function(){

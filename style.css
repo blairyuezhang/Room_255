@@ -313,11 +313,21 @@ body{
     width: 100%;
   }
 
+  #icenoglow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
   #iceglow{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    height: 100vh;
+    display: none;
   }
 
   #ice1{
@@ -326,6 +336,230 @@ body{
     top: 0;
     width: 95%;
   }
+
+
+  #ice_2{
+    position: absolute;
+    left: 5%;
+    top: 6vh;
+    width: 5%;
+  }
+
+  #ice_2c{
+    position: absolute;
+    left: 5%;
+    top: 6vh;
+    width: 5%;
+    cursor: pointer;
+  }
+
+  #ice_1{
+    position: absolute;
+    left: 60%;
+    top: 20vh;
+    width: 5%;
+  }
+
+  #ice_1c{
+    position: absolute;
+    left: 60%;
+    top: 20vh;
+    width: 5%;
+    cursor: pointer;
+  }
+
+  #ice_3{
+    position: absolute;
+    left: 40%;
+    top: 5vh;
+    width: 2%;
+    transform: rotate(20deg);
+  }
+
+  #ice_3c{
+    position: absolute;
+    left: 40%;
+    top: 5vh;
+    width: 2%;
+    transform: rotate(20deg);
+  }
+
+  #ice_4{
+    position: absolute;
+    left: 80%;
+    top: 90vh;
+    width: 3%;
+  }
+
+  #ice_4c{
+    position: absolute;
+    left: 80%;
+    top: 90vh;
+    width: 3%;
+  }
+
+  #ice_5{
+    position: absolute;
+    left: 90%;
+    top: 60vh;
+    width: 3%;
+    transform: rotate(-30deg);
+  }
+
+  #ice_5c{
+    position: absolute;
+    left: 90%;
+    top: 60vh;
+    width: 3%;
+    transform: rotate(-30deg);
+  }
+
+  #ice_6{
+    position: absolute;
+    left: 18%;
+    top: 80vh;
+    width: 2%;
+    transform: rotate(-30deg);
+  }
+
+  #ice_6c{
+    position: absolute;
+    left: 18%;
+    top: 80vh;
+    width: 2%;
+    transform: rotate(-30deg);
+  }
+
+  #ice_7{
+    position: absolute;
+    left: 52%;
+    top: 40vh;
+    width: 2%;
+    transform: rotate(30deg);
+  }
+
+  #ice_7c{
+    position: absolute;
+    left: 52%;
+    top: 40vh;
+    width: 2%;
+    transform: rotate(30deg);
+  }
+
+  #ice_n1{
+    position: absolute;
+    left: 51%;
+    top: 30vh;
+    width: 2%;
+    transform: rotate(30deg);
+  }
+
+  #ice_n1c{
+    position: absolute;
+    left: 51%;
+    top: 30vh;
+    width: 2%;
+    transform: rotate(30deg);
+  }
+
+  #ice_n2{
+    position: absolute;
+    left: 12%;
+    top: 30vh;
+    width: 2%;
+    transform: rotate(30deg);
+  }
+
+  #ice_n2c{
+    position: absolute;
+    left: 12%;
+    top: 30vh;
+    width: 2%;
+    transform: rotate(30deg);
+  }
+
+  #ice_n3{
+    position: absolute;
+    left: 8%;
+    top: 60vh;
+    width: 3%;
+  }
+
+  #ice_n3c{
+    position: absolute;
+    left: 8%;
+    top: 60vh;
+    width: 3%;
+  }
+
+  #ice_n4{
+    position: absolute;
+    left: 50%;
+    top: 70vh;
+    width: 3%;
+    transform: rotate(-30deg);
+  }
+
+  #ice_n4c{
+    position: absolute;
+    left: 50%;
+    top: 70vh;
+    width: 3%;
+    transform: rotate(-30deg);
+  }
+
+  #ice_n5{
+    position: absolute;
+    left: 90%;
+    top: 30vh;
+    width: 3%;
+    transform: rotate(-30deg);
+  }
+
+  #ice_n5c{
+    position: absolute;
+    left: 90%;
+    top: 30vh;
+    width: 3%;
+    transform: rotate(-30deg);
+  }
+
+  #icetext{
+    position: absolute;
+    left: 0;
+    top: 90vh;
+    width: 100%;
+    font-family: 'prestige';
+    font-size: 100%;
+    text-align: center;
+  }
+
+  #iceenter{
+    position: absolute;
+    left: 71%;
+    top: 88.5vh;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    border: 2px solid #000000;
+    font-size: 100%;
+  }
+
+  #ending{
+    position: absolute;
+    left: 0;
+    top: 80vh;
+    width: 100%;
+    font-family: 'prestige';
+    font-size: 100%;
+    text-align: center;
+    color: #0000ff;
+    line-height: 120%;
+    display: none;
+  }
+
 
 
 
@@ -400,5 +634,24 @@ body{
     border: 4px solid #0000ff;
     font-size: 150%;
   }
+
+  #icetext{
+    font-size: 2vw;
+  }
+
+  #iceenter{
+    left: 68%;
+    top: 91vh;
+    width: 100px;
+    height: 50px;
+    border: 4px solid #000000;
+    font-size: 150%;
+  }
+
+  #ending{
+    font-size: 2vw;
+  }
+
+
 
 }

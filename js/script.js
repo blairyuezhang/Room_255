@@ -87,6 +87,7 @@ $(document).ready(function(){
 })
 
 
+
   function musicFade() {
     $(".musicNote").fadeOut(100);
     miCount=0;
@@ -289,28 +290,172 @@ $(document).ready(function(){
 
 
 
+})
+
+function hideice2() {
+  $("#ice_2c").fadeOut();
+}
+
+$("#ice_2c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideice2
+});
+
+function hideice1() {
+  $("#ice_1c").fadeOut();
+}
+
+$("#ice_1c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideice1
+});
+
+function hideice3() {
+  $("#ice_3c").fadeOut();
+}
+
+$("#ice_3c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideice3
+});
+
+function hideice4() {
+  $("#ice_4c").fadeOut();
+}
+
+$("#ice_4c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideice4
+});
+
+function hideice5() {
+  $("#ice_5c").fadeOut();
+}
+
+$("#ice_5c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideice5
+});
+
+function hideice6() {
+  $("#ice_6c").fadeOut();
+}
+
+$("#ice_6c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideice6
+});
+
+function hideice7() {
+  $("#ice_7c").fadeOut();
+}
+
+$("#ice_7c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideice7
+});
+
+function hideicen1() {
+  $("#ice_n1c").fadeOut();
+}
+
+$("#ice_n1c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideicen1
+});
+
+function hideicen2() {
+  $("#ice_n2c").fadeOut();
+}
+
+$("#ice_n2c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideicen2
+});
+
+function hideicen3() {
+  $("#ice_n3c").fadeOut();
+}
+
+$("#ice_n3c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideicen3
+});
+
+function hideicen4() {
+  $("#ice_n4c").fadeOut();
+}
+
+$("#ice_n4c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideicen4
+});
+
+function hideicen5() {
+  $("#ice_n5c").fadeOut();
+}
+
+$("#ice_n5c").eraser({
+  size: 20,
+  completeRatio: .7,
+  completeFunction: hideicen5
+});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$("#iceenter").click(function () {
+  if($(".icecontainer").is(":hidden")) {
+    $(".iceroom").fadeOut(2000);
+    console.log("hello");
+    setTimeout(function () {
+      $("#ending").fadeIn(2000);
+    },4000)
+    }else{
+    console.log("no");
+  }
 
 })
+
+
+$(".icecontainer").on("mouseover", function() {
+  $("#iceglow").fadeIn();
+})
+
+$(".icecontainer").on("mouseout", function() {
+  $("#iceglow").fadeOut();
+})
+
+$(".icencontainer").on("mouseover", function() {
+  $("#iceglow").fadeIn();
+})
+
+$(".icencontainer").on("mouseout", function() {
+  $("#iceglow").fadeOut();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function playdo() {
   var sounddo = document.getElementById("do");
