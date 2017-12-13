@@ -38,6 +38,7 @@ $(document).ready(function(){
   $("#avocadoinput").keyup(function(){
     if(this.value == "avocado" || this.value=="AVOCADO" || this.value=="Avocado"){
       if(event.keyCode == 13) {
+        $("#avocadoW").fadeOut(0);
         $("#avocadoshape").fadeOut(100);
         $("#avocado").fadeIn(1000);
         $("#avocadoinput").fadeOut(100);
@@ -47,10 +48,14 @@ $(document).ready(function(){
         },3000)
       }
       $("#avocadoenter").click(function(){
+        $("#avocadoW").fadeOut(0);
         $("#avocadoshape").fadeOut(100);
         $("#avocado").fadeIn(1000);
         $("#avocadoinput").fadeOut(100);
         $("#avocadoenter").fadeOut(100);
+        setTimeout(function () {
+          $(".avocado").fadeOut(2000);
+        },3000)
       })
     }else{
       if(event.keyCode == 13) {
@@ -69,10 +74,17 @@ $(document).ready(function(){
   $("#mouthanswer").keyup(function(){
     if(this.value == "echo" || this.value=="ECHO" || this.value=="Echo"){
       if(event.keyCode == 13) {
+        $("#alertMouthW").fadeOut(0);
         setTimeout(function(){
           $(".mouth").fadeOut(2000);
         },1000)
       }
+      $("#mouthenter").click(function(){
+        $("#alertMouthW").fadeOut(0);
+        setTimeout(function(){
+          $(".mouth").fadeOut(2000);
+        },1000)
+      })
     }else{
       if(event.keyCode == 13) {
         $("#alertMouthW").fadeIn(100);
@@ -480,12 +492,12 @@ $("#iceenter").click(function () {
     console.log("hello");
     }else{
     $("#alertMouthW").fadeIn(100);
-    }
     setTimeout(function () {
       $("#alertMouthW").fadeOut(100);
     },2500)
     console.log("no");
-  }
+    }
+
 
 });
 
@@ -513,24 +525,26 @@ $(".icencontainer").on("mouseout", function() {
 $("#bodyinput").keyup(function(){
   if(this.value == "whistle" || this.value=="WHISTLE" || this.value=="Whistle"){
     if(event.keyCode == 13) {
+      $("#alertMouthW").fadeOut(0);
       $(".bodyfade1").fadeOut(100);
       $(".bodyfade2").fadeIn(4000);
       playwhistle();
     }
     $("#bodyenter1").click(function(){
+      $("#alertMouthW").fadeOut(0);
       $(".bodyfade1").fadeOut(100);
       $(".bodyfade2").fadeIn(4000);
       playwhistle();
     })
   }else{
     if(event.keyCode == 13) {
-      $("#avocadoW").fadeIn(100);
+      $("#alertMouthW").fadeIn(100);
     }
     $("#bodyenter1").click(function(){
-      $("#avocadoW").fadeIn(100);
+      $("#alertMouthW").fadeIn(100);
     })
     setTimeout(function () {
-      $("#avocadoW").fadeOut(100);
+      $("#alertMouthW").fadeOut(100);
     },2500)
 }
 })
@@ -538,6 +552,7 @@ $("#bodyinput").keyup(function(){
 $("#bodyinput2").keyup(function(){
   if(this.value == "kill bill" || this.value=="KILL BILL" || this.value=="Kill Bill"){
     if(event.keyCode == 13) {
+      $("#alertMouthW").fadeOut(0);
       $(".bodyfade2").fadeOut(100);
       setTimeout(function () {
         $("#bodydance").fadeIn(2000);
@@ -547,6 +562,7 @@ $("#bodyinput2").keyup(function(){
       },7000)
     }
     $("#bodyenter2").click(function(){
+      $("#alertMouthW").fadeOut(0);
       $(".bodyfade2").fadeOut(100);
       setTimeout(function () {
         $("#bodydance").fadeIn(2000);
@@ -557,13 +573,13 @@ $("#bodyinput2").keyup(function(){
     })
   }else{
     if(event.keyCode == 13) {
-      $("#avocadoW").fadeIn(100);
+      $("#alertMouthW").fadeIn(100);
     }
     $("#bodyenter2").click(function(){
-      $("#avocadoW").fadeIn(100);
+      $("#alertMouthW").fadeIn(100);
     })
     setTimeout(function () {
-      $("#avocadoW").fadeOut(100);
+      $("#alertMouthW").fadeOut(100);
     },2500)
 }
 })
