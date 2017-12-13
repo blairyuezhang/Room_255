@@ -478,10 +478,12 @@ $("#iceenter").click(function () {
   if($(".icecontainer").is(":hidden")) {
     $(".iceroom").fadeOut(2000);
     console.log("hello");
-    setTimeout(function () {
-      $("#ending").fadeIn(2000);
-    },4000)
     }else{
+    $("#alertMouthW").fadeIn(100);
+    }
+    setTimeout(function () {
+      $("#alertMouthW").fadeOut(100);
+    },2500)
     console.log("no");
   }
 
@@ -506,6 +508,65 @@ $(".icencontainer").on("mouseout", function() {
   $("#iceglow").fadeOut();
 })
 
+
+
+$("#bodyinput").keyup(function(){
+  if(this.value == "whistle" || this.value=="WHISTLE" || this.value=="Whistle"){
+    if(event.keyCode == 13) {
+      $(".bodyfade1").fadeOut(100);
+      $(".bodyfade2").fadeIn(4000);
+      playwhistle();
+    }
+    $("#bodyenter1").click(function(){
+      $(".bodyfade1").fadeOut(100);
+      $(".bodyfade2").fadeIn(4000);
+      playwhistle();
+    })
+  }else{
+    if(event.keyCode == 13) {
+      $("#avocadoW").fadeIn(100);
+    }
+    $("#bodyenter1").click(function(){
+      $("#avocadoW").fadeIn(100);
+    })
+    setTimeout(function () {
+      $("#avocadoW").fadeOut(100);
+    },2500)
+}
+})
+
+$("#bodyinput2").keyup(function(){
+  if(this.value == "kill bill" || this.value=="KILL BILL" || this.value=="Kill Bill"){
+    if(event.keyCode == 13) {
+      $(".bodyfade2").fadeOut(100);
+      setTimeout(function () {
+        $("#bodydance").fadeIn(2000);
+      },500)
+      setTimeout(function () {
+        $("#ending").fadeIn(2000);
+      },7000)
+    }
+    $("#bodyenter2").click(function(){
+      $(".bodyfade2").fadeOut(100);
+      setTimeout(function () {
+        $("#bodydance").fadeIn(2000);
+      },1000)
+      setTimeout(function () {
+        $("#ending").fadeIn(2000);
+      },500)
+    })
+  }else{
+    if(event.keyCode == 13) {
+      $("#avocadoW").fadeIn(100);
+    }
+    $("#bodyenter2").click(function(){
+      $("#avocadoW").fadeIn(100);
+    })
+    setTimeout(function () {
+      $("#avocadoW").fadeOut(100);
+    },2500)
+}
+})
 
 
 
@@ -561,4 +622,9 @@ function playsi() {
   soundsi.currentTime=0;
   soundsi.volume = 0.2;
   soundsi.play();
+}
+
+function playwhistle(){
+  var songwhistle = document.getElementById("whistlesong");
+  songwhistle.play();
 }
