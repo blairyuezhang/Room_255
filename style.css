@@ -299,7 +299,7 @@ body{
     font-size: 100%;
   }
 
-  #body{
+  #bodydance{
     position: absolute;
     left: 0;
     top: 0;
@@ -309,7 +309,7 @@ body{
   #ice2{
     position: absolute;
     left: 0;
-    top: 0;
+    top: -5vh;
     width: 100%;
   }
 
@@ -333,19 +333,33 @@ body{
   #ice1{
     position: absolute;
     left: 0;
-    top: 0;
+    top: -8vh;
     width: 95%;
   }
 
 
-  #ice_2{
+  #icecream1{
+    position: absolute;
+    left: 60%;
+    top: 20vh;
+    width: 5%;
+  }
+
+  #container1{
+    position: absolute;
+    left: 60%;
+    top: 20vh;
+    width: 5%;
+  }
+
+  #icecream2{
     position: absolute;
     left: 5%;
     top: 6vh;
     width: 5%;
   }
 
-  #ice_2c{
+  #container2{
     position: absolute;
     left: 5%;
     top: 6vh;
@@ -353,52 +367,37 @@ body{
     cursor: pointer;
   }
 
-  #ice_1{
-    position: absolute;
-    left: 60%;
-    top: 20vh;
-    width: 5%;
-  }
-
-  #ice_1c{
-    position: absolute;
-    left: 60%;
-    top: 20vh;
-    width: 5%;
-    cursor: pointer;
-  }
-
-  #ice_3{
+  #icecream3{
     position: absolute;
     left: 40%;
-    top: 5vh;
-    width: 2%;
+    top: 4vh;
+    width: 3%;
     transform: rotate(20deg);
   }
 
-  #ice_3c{
+  #container3{
     position: absolute;
     left: 40%;
-    top: 5vh;
-    width: 2%;
+    top: 4vh;
+    width: 3%;
     transform: rotate(20deg);
   }
 
-  #ice_4{
+  #icecream4{
     position: absolute;
     left: 80%;
     top: 90vh;
     width: 3%;
   }
 
-  #ice_4c{
+  #container4{
     position: absolute;
     left: 80%;
     top: 90vh;
     width: 3%;
   }
 
-  #ice_5{
+  #icecream5{
     position: absolute;
     left: 90%;
     top: 60vh;
@@ -406,7 +405,7 @@ body{
     transform: rotate(-30deg);
   }
 
-  #ice_5c{
+  #container5{
     position: absolute;
     left: 90%;
     top: 60vh;
@@ -414,85 +413,85 @@ body{
     transform: rotate(-30deg);
   }
 
-  #ice_6{
+  #icecream6{
     position: absolute;
     left: 18%;
     top: 80vh;
-    width: 2%;
+    width: 3%;
     transform: rotate(-30deg);
   }
 
-  #ice_6c{
+  #container6{
     position: absolute;
     left: 18%;
     top: 80vh;
-    width: 2%;
+    width: 3%;
     transform: rotate(-30deg);
   }
 
-  #ice_7{
+  #icecream7{
     position: absolute;
     left: 52%;
     top: 40vh;
-    width: 2%;
+    width: 3%;
     transform: rotate(30deg);
   }
 
-  #ice_7c{
+  #container7{
     position: absolute;
     left: 52%;
     top: 40vh;
-    width: 2%;
+    width: 3%;
     transform: rotate(30deg);
   }
 
-  #ice_n1{
+  #object1{
     position: absolute;
-    left: 51%;
+    left: 34%;
     top: 30vh;
-    width: 2%;
+    width: 3%;
     transform: rotate(30deg);
   }
 
-  #ice_n1c{
+  #contain1{
     position: absolute;
-    left: 51%;
+    left: 34%;
     top: 30vh;
-    width: 2%;
+    width: 3%;
     transform: rotate(30deg);
   }
 
-  #ice_n2{
-    position: absolute;
-    left: 12%;
-    top: 30vh;
-    width: 2%;
-    transform: rotate(30deg);
-  }
-
-  #ice_n2c{
+  #object2{
     position: absolute;
     left: 12%;
     top: 30vh;
-    width: 2%;
+    width: 3%;
     transform: rotate(30deg);
   }
 
-  #ice_n3{
+  #contain2{
+    position: absolute;
+    left: 12%;
+    top: 30vh;
+    width: 3%;
+    transform: rotate(30deg);
+  }
+
+  #object3{
     position: absolute;
     left: 8%;
     top: 60vh;
     width: 3%;
   }
 
-  #ice_n3c{
+  #contain3{
     position: absolute;
     left: 8%;
     top: 60vh;
     width: 3%;
   }
 
-  #ice_n4{
+  #object4{
     position: absolute;
     left: 50%;
     top: 70vh;
@@ -500,7 +499,7 @@ body{
     transform: rotate(-30deg);
   }
 
-  #ice_n4c{
+  #contain4{
     position: absolute;
     left: 50%;
     top: 70vh;
@@ -508,7 +507,7 @@ body{
     transform: rotate(-30deg);
   }
 
-  #ice_n5{
+  #object5{
     position: absolute;
     left: 90%;
     top: 30vh;
@@ -516,7 +515,7 @@ body{
     transform: rotate(-30deg);
   }
 
-  #ice_n5c{
+  #contain5{
     position: absolute;
     left: 90%;
     top: 30vh;
@@ -550,13 +549,12 @@ body{
   #ending{
     position: absolute;
     left: 0;
-    top: 80vh;
+    top: 90vh;
     width: 100%;
     font-family: 'prestige';
     font-size: 100%;
     text-align: center;
     color: #0000ff;
-    line-height: 120%;
     display: none;
   }
 

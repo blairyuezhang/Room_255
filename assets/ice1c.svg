@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 172.5"><defs><style>.cls-1{fill:#ffc3c7;stroke:#ffc3c7;stroke-miterlimit:10;}</style></defs><title>Asset 8</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_5" data-name="Layer 5"><path class="cls-1" d="M69.5,107h11a0,0,0,0,1,0,0v59.5A5.5,5.5,0,0,1,75,172h0a5.5,5.5,0,0,1-5.5-5.5V107A0,0,0,0,1,69.5,107Z"/><circle class="cls-1" cx="14" cy="39.5" r="13.5"/><circle class="cls-1" cx="51.33" cy="20.5" r="20"/><circle class="cls-1" cx="97.67" cy="20.5" r="20"/><circle class="cls-1" cx="135" cy="39.5" r="13.5"/><ellipse class="cls-1" cx="75" cy="88" rx="54" ry="38.5"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 149 172.5" style="enable-background:new 0 0 149 172.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFC3C7;stroke:#FFC3C7;stroke-miterlimit:10;}
+</style>
+<title>Asset 8</title>
+<g>
+	<circle class="st0" cx="14" cy="39.5" r="13.5"/>
+	<circle class="st0" cx="51.3" cy="20.5" r="20"/>
+	<circle class="st0" cx="97.7" cy="20.5" r="20"/>
+	<circle class="st0" cx="135" cy="39.5" r="13.5"/>
+	<path class="st0" d="M75,49.5c-29.8,0-54,17.2-54,38.5c0,19.9,21.3,36.3,48.5,38.3v40.2c0,3,2.5,5.5,5.5,5.5c3,0,5.5-2.5,5.5-5.5
+		v-40.2c27.2-2,48.5-18.4,48.5-38.3C129,66.7,104.8,49.5,75,49.5z"/>
+</g>
+</svg>

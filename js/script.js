@@ -289,129 +289,190 @@ $(document).ready(function(){
 
 
 
-
 })
 
-function hideice2() {
-  $("#ice_2c").fadeOut();
-}
 
-$("#ice_2c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideice2
+var container1Click = 1;
+
+$("#container1").click(function(){
+  container1Click++;
+  console.log(container1Click);
+  if (container1Click==1) {
+    $("#container1").fadeTo("slow", 0.8);
+  }else if (container1Click==2) {
+    $("#container1").fadeTo("slow", 0.6);
+  }else if (container1Click==3) {
+    $("#container1").fadeTo("slow", 0.3);
+  }else if (container1Click==4) {
+    $("#container1").fadeOut();
+  }
 });
 
-function hideice1() {
-  $("#ice_1c").fadeOut();
-}
+var container2Click = 1;
 
-$("#ice_1c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideice1
+$("#container2").click(function(){
+  container2Click++;
+  if (container2Click==1) {
+    $("#container2").fadeTo("slow", 0.8);
+  }else if (container2Click==2) {
+    $("#container2").fadeTo("slow", 0.6);
+  }else if (container2Click==3) {
+    $("#container2").fadeTo("slow", 0.3);
+  }else if (container2Click==4) {
+    $("#container2").fadeOut();
+  }
 });
 
-function hideice3() {
-  $("#ice_3c").fadeOut();
-}
+var container3Click = 1;
 
-$("#ice_3c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideice3
+$("#container3").click(function(){
+  container3Click++;
+  if (container3Click==1) {
+    $("#container3").fadeTo("slow", 0.8);
+  }else if (container3Click==2) {
+    $("#container3").fadeTo("slow", 0.6);
+  }else if (container3Click==3) {
+    $("#container3").fadeTo("slow", 0.3);
+  }else if (container3Click==4) {
+    $("#container3").fadeOut();
+  }
 });
 
-function hideice4() {
-  $("#ice_4c").fadeOut();
-}
+var container4Click = 1;
 
-$("#ice_4c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideice4
+$("#container4").click(function(){
+  container4Click++;
+  if (container4Click==1) {
+    $("#container4").fadeTo("slow", 0.8);
+  }else if (container4Click==2) {
+    $("#container4").fadeTo("slow", 0.6);
+  }else if (container4Click==3) {
+    $("#container4").fadeTo("slow", 0.3);
+  }else if (container4Click==4) {
+    $("#container4").fadeOut();
+  }
 });
 
-function hideice5() {
-  $("#ice_5c").fadeOut();
-}
+var container5Click = 1;
 
-$("#ice_5c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideice5
+$("#container5").click(function(){
+  container5Click++;
+  if (container5Click==1) {
+    $("#container5").fadeTo("slow", 0.8);
+  }else if (container5Click==2) {
+    $("#container5").fadeTo("slow", 0.6);
+  }else if (container5Click==3) {
+    $("#container5").fadeTo("slow", 0.3);
+  }else if (container5Click==4) {
+    $("#container5").fadeOut();
+  }
 });
 
-function hideice6() {
-  $("#ice_6c").fadeOut();
-}
+var container6Click = 1;
 
-$("#ice_6c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideice6
+$("#container6").click(function(){
+  container6Click++;
+  if (container6Click==1) {
+    $("#container6").fadeTo("slow", 0.8);
+  }else if (container6Click==2) {
+    $("#container6").fadeTo("slow", 0.6);
+  }else if (container6Click==3) {
+    $("#container6").fadeTo("slow", 0.3);
+  }else if (container6Click==4) {
+    $("#container6").fadeOut();
+  }
 });
 
-function hideice7() {
-  $("#ice_7c").fadeOut();
-}
+var container7Click = 1;
 
-$("#ice_7c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideice7
+$("#container7").click(function(){
+  container7Click++;
+  if (container7Click==1) {
+    $("#container7").fadeTo("slow", 0.8);
+  }else if (container7Click==2) {
+    $("#container7").fadeTo("slow", 0.6);
+  }else if (container7Click==3) {
+    $("#container7").fadeTo("slow", 0.3);
+  }else if (container7Click==4) {
+    $("#container7").fadeOut();
+  }
 });
 
-function hideicen1() {
-  $("#ice_n1c").fadeOut();
-}
 
-$("#ice_n1c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideicen1
+var objectcon1Click = 1;
+
+$("#contain1").click(function(){
+  objectcon1Click++;
+  if (objectcon1Click==1) {
+    $("#contain1").fadeTo("slow", 0.8);
+  }else if (objectcon1Click==2) {
+    $("#contain1").fadeTo("slow", 0.6);
+  }else if (objectcon1Click==3) {
+    $("#contain1").fadeTo("slow", 0.3);
+  }else if (objectcon1Click==4) {
+    $("#contain1").fadeOut();
+  }
 });
 
-function hideicen2() {
-  $("#ice_n2c").fadeOut();
-}
+var objectcon2Click = 1;
 
-$("#ice_n2c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideicen2
+$("#contain2").click(function(){
+  objectcon2Click++;
+  if (objectcon2Click==1) {
+    $("#contain2").fadeTo("slow", 0.8);
+  }else if (objectcon2Click==2) {
+    $("#contain2").fadeTo("slow", 0.6);
+  }else if (objectcon2Click==3) {
+    $("#contain2").fadeTo("slow", 0.3);
+  }else if (objectcon2Click==4) {
+    $("#contain2").fadeOut();
+  }
 });
 
-function hideicen3() {
-  $("#ice_n3c").fadeOut();
-}
+var objectcon3Click = 1;
 
-$("#ice_n3c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideicen3
+$("#contain3").click(function(){
+  objectcon3Click++;
+  if (objectcon3Click==1) {
+    $("#contain3").fadeTo("slow", 0.8);
+  }else if (objectcon3Click==2) {
+    $("#contain3").fadeTo("slow", 0.6);
+  }else if (objectcon3Click==3) {
+    $("#contain3").fadeTo("slow", 0.3);
+  }else if (objectcon3Click==4) {
+    $("#contain3").fadeOut();
+  }
 });
 
-function hideicen4() {
-  $("#ice_n4c").fadeOut();
-}
+var objectcon4Click = 1;
 
-$("#ice_n4c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideicen4
+$("#contain4").click(function(){
+  objectcon4Click++;
+  if (objectcon4Click==1) {
+    $("#contain4").fadeTo("slow", 0.8);
+  }else if (objectcon4Click==2) {
+    $("#contain4").fadeTo("slow", 0.6);
+  }else if (objectcon4Click==3) {
+    $("#contain4").fadeTo("slow", 0.3);
+  }else if (objectcon4Click==4) {
+    $("#contain4").fadeOut();
+  }
 });
 
-function hideicen5() {
-  $("#ice_n5c").fadeOut();
-}
+var objectcon5Click = 1;
 
-$("#ice_n5c").eraser({
-  size: 20,
-  completeRatio: .7,
-  completeFunction: hideicen5
+$("#contain5").click(function(){
+  objectcon5Click++;
+  if (objectcon5Click==1) {
+    $("#contain5").fadeTo("slow", 0.8);
+  }else if (objectcon5Click==2) {
+    $("#contain5").fadeTo("slow", 0.6);
+  }else if (objectcon5Click==3) {
+    $("#contain5").fadeTo("slow", 0.3);
+  }else if (objectcon5Click==4) {
+    $("#contain5").fadeOut();
+  }
 });
-
 
 $("#iceenter").click(function () {
   if($(".icecontainer").is(":hidden")) {
@@ -424,7 +485,9 @@ $("#iceenter").click(function () {
     console.log("no");
   }
 
-})
+});
+
+
 
 
 $(".icecontainer").on("mouseover", function() {
