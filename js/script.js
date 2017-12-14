@@ -14,20 +14,20 @@ $(document).ready(function(){
     onDrag : function(){
       var rotations = Math.floor((this.rotation)/360*10)
 
-              if (rotations==50){
+              if (rotations===50){
               $("#enter").click(function(){
                 $("#alertThink").fadeOut(0);
                 setTimeout(function () {
                   $(".bikeroom").fadeOut(2000);
                 },1000)
-              })
+              });
             }else {
               $("#enter").click(function(){
               $("#alertThink").fadeIn(0);
               setTimeout(function () {
                 $("#alertThink").fadeOut(100);
               },2500)
-              })
+            });
             }
 
 
@@ -487,21 +487,19 @@ $("#contain5").click(function(){
 });
 
 $("#iceenter").click(function () {
-  if($(".icecontainer").is(":hidden")) {
+  if ( $("img.icecontainer:visible").length === 0){
     $(".iceroom").fadeOut(2000);
     console.log("hello");
+
     }else{
-    $("#alertMouthW").fadeIn(100);
+    $("#avocadoW").fadeIn(100);
     setTimeout(function () {
-      $("#alertMouthW").fadeOut(100);
+      $("#avocadoW").fadeOut(100);
     },2500)
     console.log("no");
     }
 
-
 });
-
-
 
 
 $(".icecontainer").on("mouseover", function() {
@@ -519,7 +517,6 @@ $(".icencontainer").on("mouseover", function() {
 $(".icencontainer").on("mouseout", function() {
   $("#iceglow").fadeOut();
 })
-
 
 
 $("#bodyinput").keyup(function(){
